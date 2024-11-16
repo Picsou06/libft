@@ -6,14 +6,14 @@
 #    By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/27 09:39:13 by ajordan-          #+#    #+#              #
-#    Updated: 2024/11/16 15:28:59 by evdalmas         ###   ########.fr        #
+#    Updated: 2024/11/16 15:34:06 by evdalmas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #Standard
 
 NAME		=	libft.a
-INCLUDES	=	./include
+INCLUDES	=	../include
 SRCS_DIR 	=	src/
 OBJS_DIR	=	obj/
 CC			=	gcc
