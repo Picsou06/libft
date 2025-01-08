@@ -6,16 +6,16 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:30:32 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/10 16:42:36 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:21:49 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_Llist	*ft_lstmap(t_Llist *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_list;
-	t_list	*new_node;
+	t_Llist	*new_list;
+	t_Llist	*new_node;
 	void	*content;
 
 	if (!lst || !f)

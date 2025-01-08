@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 14:59:34 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 15:42:38 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:14 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

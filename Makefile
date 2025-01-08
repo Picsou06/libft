@@ -6,7 +6,7 @@
 #    By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/27 09:39:13 by ajordan-          #+#    #+#              #
-#    Updated: 2024/11/16 15:34:06 by evdalmas         ###   ########.fr        #
+#    Updated: 2025/01/08 17:24:46 by evdalmas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,12 +44,16 @@ FTLST_DIR	=	ft_lst/
 FTLST		=	ft_lstadd_back_bonus ft_lstadd_front_bonus ft_lstclear_bonus ft_lstdelone_bonus \
 				ft_lstiter_bonus ft_lstlast_bonus ft_lstmap_bonus ft_lstnew_bonus ft_lstsize_bonus
 
+FTPRTF_DIR	=	ft_printf/
+FTPRTF		=	ft_count ft_printf ft_puthex ft_putptr
+
 SRC_FILES+=$(addprefix $(FTIS_DIR),$(FTIS))
 SRC_FILES+=$(addprefix $(FTMEM_DIR),$(FTMEM))
 SRC_FILES+=$(addprefix $(FTPUT_DIR),$(FTPUT))
 SRC_FILES+=$(addprefix $(FTTO_DIR),$(FTTO))
 SRC_FILES+=$(addprefix $(FTSTR_DIR),$(FTSTR))
 SRC_FILES+=$(addprefix $(FTLST_DIR),$(FTLST))
+SRC_FILES+=$(addprefix $(FTPRTF_DIR),$(FTPRTF))
 
 SRCS 		= 	$(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS 		= 	$(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
@@ -76,6 +80,7 @@ $(OBJSF):
 			@mkdir -p $(OBJS_DIR)$(FTTO_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTSTR_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTLST_DIR)
+			@mkdir -p $(OBJS_DIR)$(FTPRTF_DIR)
 
 clean:
 			@$(RM) -rf $(OBJS_DIR)

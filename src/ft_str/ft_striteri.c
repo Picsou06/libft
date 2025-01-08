@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:01:34 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 15:42:35 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:11 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

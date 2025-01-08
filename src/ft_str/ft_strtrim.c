@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 12:43:47 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 14:18:26 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:16 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 static int	ft_is_in_set(char c, const char *set)
 {

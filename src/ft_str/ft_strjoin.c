@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 12:19:49 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/08 11:46:55 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:11 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 int	get_len(const char *str1, const char *str2)
 {

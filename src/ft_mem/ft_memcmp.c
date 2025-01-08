@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:01:51 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 16:03:08 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:01:56 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 {

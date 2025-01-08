@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:01:51 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/10 14:01:19 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:01:55 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

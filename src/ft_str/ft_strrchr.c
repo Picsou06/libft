@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:01:51 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/10 13:58:37 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:16 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

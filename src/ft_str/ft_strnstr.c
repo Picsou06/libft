@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:04:03 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/08 10:15:52 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:21:24 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 int	is_match(char *str, char *to_find)
 {
@@ -22,30 +22,30 @@ int	is_match(char *str, char *to_find)
 	return (*to_find == '\0');
 }
 
-char	*ft_strnstr(char *big, char *little, unsigned int len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char			*answer;
-	unsigned int	i;
-	int				size;
+	const char		*answer;
+	size_t			i;
+	size_t			size;
 
-	if (*little == '\0')
-		return (big);
+	if (*needle == '\0')
+		return ((char *)haystack);
 	size = 0;
-	while (little[size] != '\0')
+	while (needle[size] != '\0')
 		size++;
 	i = 0;
-	while (*big && i < len)
+	while (*haystack && i < len)
 	{
-		if (*big == *little)
+		if (*haystack == *needle)
 		{
-			answer = big;
-			if (is_match(big, little) && i + size - 1 < len)
+			answer = haystack;
+			if (is_match((char *)haystack, (char *)needle) && i + size - 1 < len)
 			{
-				return (answer);
+				return ((char *)answer);
 			}
 		}
 		i++;
-		big++;
+		haystack++;
 	}
 	return (NULL);
 }

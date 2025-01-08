@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:39:44 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 15:41:15 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:08 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:25:07 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/10 14:07:30 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:17 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

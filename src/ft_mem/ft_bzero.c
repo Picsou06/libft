@@ -6,13 +6,13 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:49:16 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/04 17:37:57 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:05:44 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
-void	*ft_bzero(void *pointer, unsigned long count)
+void	*ft_bzero(void *pointer, size_t count)
 {
 	unsigned char	*p;
 	unsigned long	i;

@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:00:27 by abonnard          #+#    #+#             */
-/*   Updated: 2024/11/10 14:30:42 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:09 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 static char	**ft_malloc_error(char **tab)
 {

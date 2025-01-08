@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 15:49:16 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:01:57 by evdalmas         ###   ########.fr       */
+/*   Created: 2024/11/16 14:49:16 by evdalmas          #+#    #+#             */
+/*   Updated: 2025/01/08 17:03:03 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../../includes/ft_printf.h"
 #include "../../includes/libft.h"
 
-void	*ft_memcpy(void *destination, const void *source, size_t size)
+int	ft_ptr_len(uintptr_t num)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	unsigned long		i;
+	int	len;
 
-	if (!destination && !source && size)
-		return (NULL);
-	d = (unsigned char *) destination;
-	s = (const unsigned char *) source;
-	i = 0;
-	while (i < size)
+	if (num == 0)
+		return (3);
+	len = 0;
+	while (num != 0)
 	{
-		d[i] = s[i];
-		i++;
+		len++;
+		num = num / 16;
 	}
-	return (destination);
+	return (len);
+}
+
+void	ft_putptr(void *ptr)
+{
+	if ((unsigned long)ptr == 0)
+	{
+		ft_putstr_fd("(nil)", 1);
+		return ;
+	}
+	ft_putstr_fd("0x", 1);
+	ft_puthex((unsigned long)ptr);
 }

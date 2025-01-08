@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:49:16 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/04 18:20:13 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:01:59 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 #include <stddef.h> // for size_t
 

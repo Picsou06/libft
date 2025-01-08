@@ -6,15 +6,15 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:41:25 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/04 18:07:22 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:20:15 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
-int	ft_strlen(const char *word)
+size_t	ft_strlen(const char *word)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (*word != '\0')

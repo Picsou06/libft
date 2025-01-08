@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 14:31:27 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/09 14:50:21 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:18 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 int	calcsize(int n)
 {

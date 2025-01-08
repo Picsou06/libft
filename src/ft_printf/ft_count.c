@@ -1,32 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_count.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 15:49:16 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:01:57 by evdalmas         ###   ########.fr       */
+/*   Created: 2024/11/17 14:54:40 by evdalmas          #+#    #+#             */
+/*   Updated: 2025/01/08 17:02:58 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../../includes/ft_printf.h"
 #include "../../includes/libft.h"
 
-void	*ft_memcpy(void *destination, const void *source, size_t size)
+int	ft_nb_len(int nb)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	unsigned long		i;
+	int	count;
 
-	if (!destination && !source && size)
-		return (NULL);
-	d = (unsigned char *) destination;
-	s = (const unsigned char *) source;
-	i = 0;
-	while (i < size)
+	count = 0;
+	if (nb == 0)
+		return (1);
+	if (nb < 0)
 	{
-		d[i] = s[i];
-		i++;
+		count++;
+		nb = -nb;
 	}
-	return (destination);
+	while (nb != 0)
+	{
+		nb = nb / 10;
+		count++;
+	}
+	return (count);
+}
+
+int	ft_unsignednb_len(unsigned int nb)
+{
+	int	count;
+
+	count = 0;
+	if (nb == 0)
+		return (1);
+	while (nb != 0)
+	{
+		nb = nb / 10;
+		count++;
+	}
+	return (count);
 }

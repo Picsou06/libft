@@ -6,11 +6,11 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:46:23 by evdalmas          #+#    #+#             */
-/*   Updated: 2024/11/04 17:55:45 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:00 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	*ft_memset(void *pointer, int value, size_t count)
 {
