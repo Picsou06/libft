@@ -6,7 +6,7 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 16:54:31 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:10:20 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:38:22 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdlib.h>
+# include <stdint.h>
 
 int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
@@ -68,7 +68,7 @@ int		ft_lstsize(t_Llist *lst);
 void	ft_lstiter(t_Llist *lst, void (*f)(void *));
 void	ft_lstdelone(t_Llist *lst, void (*del)(void*));
 void	ft_lstclear(t_Llist **lst, void (*del)(void*));
-void	ft_lstadd_front(t_Llist **lst, t_Llist *new);
-void	ft_lstadd_back(t_Llist **lst, t_Llist *new);
+void	ft_lstadd_front(t_Llist **lst, t_Llist *new_node);
+void	ft_lstadd_back(t_Llist **lst, t_Llist *new_node);
 
 #endif

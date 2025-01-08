@@ -6,7 +6,7 @@
 /*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:21:17 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:07:20 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:34:27 by evdalmas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t elementCount, size_t elementSize)
 	void	*ptr;
 	size_t		i;
 
+	if (elementSize != 0 && elementCount > SIZE_MAX / elementSize)
+		return (NULL);
 	ptr = malloc(elementCount * elementSize);
 	if (ptr == NULL)
 		return (NULL);
