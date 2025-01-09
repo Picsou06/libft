@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: picsou06 <picsou06@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 14:49:16 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:03:03 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/09 20:33:04 by picsou06         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
 #include "../../includes/libft.h"
 
 int	ft_ptr_len(uintptr_t num)

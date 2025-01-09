@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: picsou06 <picsou06@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 14:51:58 by evdalmas          #+#    #+#             */
-/*   Updated: 2025/01/08 17:02:59 by evdalmas         ###   ########.fr       */
+/*   Updated: 2025/01/09 20:32:41 by picsou06         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
 #include "../../includes/libft.h"
 
 void	ft_putunsignednbr_fd(unsigned int n, int fd)
