@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t elementCount, size_t elementSize)
 {
 	void	*ptr;
-	size_t		i;
+	size_t	i;
 
 	if (elementSize != 0 && elementCount > SIZE_MAX / elementSize)
 		return (NULL);
