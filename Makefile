@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: picsou06 <picsou06@student.42.fr>          +#+  +:+       +#+         #
+#    By: evdalmas <evdalmas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/08 15:00:13 by evdalmas          #+#    #+#              #
-#    Updated: 2025/01/09 20:31:49 by picsou06         ###   ########.fr        #
+#    Updated: 2025/02/03 06:24:55 by evdalmas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,9 @@ FTLST		=	ft_lstadd_back_bonus ft_lstadd_front_bonus ft_lstclear_bonus ft_lstdelo
 FTPRTF_DIR	=	ft_printf/
 FTPRTF		=	ft_count ft_printf ft_puthex ft_putptr
 
+FTGNL_DIR	=	ft_gnl/
+FTGNL		=	get_next_line
+
 SRC_FILES+=$(addprefix $(FTIS_DIR),$(FTIS))
 SRC_FILES+=$(addprefix $(FTMEM_DIR),$(FTMEM))
 SRC_FILES+=$(addprefix $(FTPUT_DIR),$(FTPUT))
@@ -54,6 +57,7 @@ SRC_FILES+=$(addprefix $(FTTO_DIR),$(FTTO))
 SRC_FILES+=$(addprefix $(FTSTR_DIR),$(FTSTR))
 SRC_FILES+=$(addprefix $(FTLST_DIR),$(FTLST))
 SRC_FILES+=$(addprefix $(FTPRTF_DIR),$(FTPRTF))
+SRC_FILES+=$(addprefix $(FTGNL_DIR),$(FTGNL))
 
 SRCS 		= 	$(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS 		= 	$(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
@@ -80,6 +84,7 @@ $(OBJSF):
 			@mkdir -p $(OBJS_DIR)$(FTSTR_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTLST_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTPRTF_DIR)
+			@mkdir -p $(OBJS_DIR)$(FTGNL_DIR)
 
 clean:
 			@$(RM) -rf $(OBJS_DIR)
